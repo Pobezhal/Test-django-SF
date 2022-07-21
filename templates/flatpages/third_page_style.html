@@ -1,0 +1,17 @@
+{% extends 'flatpages/default.html' %}
+
+{% block content %}
+&#9757 {{ flatpage.content }} &#169
+<br> <br> <br>
+
+Залогиньтес!
+
+<br> <br>
+
+<form name="regForm">
+<label>Username: <input type="text" id="username"></label>
+<label>Password: <input type="password" id="pwd"></label>
+<input type="submit" class="login" value="Log In" onclick="validation()" formtarget="_blank">
+</form>
+{% endblock content %}
+
